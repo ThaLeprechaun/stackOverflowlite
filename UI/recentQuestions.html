@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StackOverflow-lite</title>
+	<link rel="stylesheet" type="text/css" href="css/feed.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans">
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			
+		</div>
+
+		<div class="leftNav">
+			<a href="home.html">Home</a>
+			<a href="#">Notifications</a>
+			<a href="#"  id="newpost">New Question</a>
+			<a href="signIn.html" id="log">Log In</a>
+			<input type="text" name="search" placeholder="Search...">
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="leftpane">
+			<div class="about">
+				<div class="user">
+					<img src="icons/avatar.png">
+					<p>Username</p>
+				</div>
+				<div class="bio">
+					<h3>Bio</h3>
+					<p>I am an aspiring software developer. You can also view all the questions i have asked on this platform.Thanks for checking out my profile.</p>
+					<button>Edit</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="activities">
+			<div class="container">
+				<h1>Questions asked by you</h1>
+				<div class="content">
+					<div class="question" id="question">
+						<p><a href="answersToYours.html">What are data Structures?</a></p>
+						<a href="answersToYours.html"><h4>1 answer</h4></a>
+					</div>
+					<div class="avatar">
+						<p>2 mins ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="question" id="question">
+						<p><a href="answersToYours.html">What are data Structures?</a></p>
+						<a href="answersToYours.html"><h4>1 answer</h4></a>
+					</div>
+					<div class="avatar">
+						<p>2 mins ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="question" id="question">
+						<p><a href="answersToYours.html">What are data Structures?</a></p>
+						<a href="answersToYours.html"><h4>1 answer</h4></a>
+					</div>
+					<div class="avatar">
+						<p>2 mins ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="question" id="question">
+						<p><a href="answersToYours.html">What are data Structures?</a></p>
+						<a href="answersToYours.html"><h4>1 answer</h4></a>
+					</div>
+					<div class="avatar">
+						<p>2 mins ago</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="question" id="question">
+						<p><a href="answersToYours.html">What are data Structures?</a></p>
+						<a href="answersToYours.html"><h4>1 answer</h4></a>
+					</div>
+					<div class="avatar">
+						<p>2 mins ago</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="rightpane">
+			<a href="questionsAsked.html">Questions Asked (5)</a>
+			<a href="answeredQuestions.html">Questions Answered (1)</a>
+			<a href="mostAnswers.html">Most Answered Question</a>
+			<a href="recentQuestions.html">Recent Questions</a>
+		</div>
+	</div>	
+	<div class="footer"></div>
+
+	<!---------------- Modal content for new questions ----------------------->
+
+	<div id="modal" class="modal">
+		<div class="modalContent">
+			<span id="close">x</span>
+			<div class="modalpost">
+				<h1>Ask a question</h1>
+				<h2>Question Title</h2>
+				<textarea rows="2" cols="60" placeholder="Type your question here" id="text"></textarea>
+				<h2>Describe your question</h2>
+				<textarea rows="5" cols="60" placeholder="Describe your question" id="text"></textarea>
+				<p><button onclick="postQuestion()">Post</button></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/modal.js"></script>
+</html>
