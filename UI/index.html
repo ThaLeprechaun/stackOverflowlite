@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StackOverflow-lite</title>
+	<link rel="stylesheet" type="text/css" href="css/feed.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans">
+</head>
+<body>
+
+	<div id="header">
+		<div id="logo">
+			
+		</div>
+
+		<div class="leftNav">
+			<a href="#">Home</a>
+			<a href="#">Notifications</a>
+			<a href="#"  id="newpost">Ask Question</a>
+			<a href="signIn.html" id="log">Log In</a>
+			<input type="text" name="search" placeholder="Search...">
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="leftpane">
+
+			<a href="profile.html">My Profile</a>
+			<a href="questionsAsked.html">My Questions</a>
+			<a href="#">Settings</a>
+			<a href="#">Log Out</a>
+		</div>
+
+		<div class="activities" id="activities">
+			<div class="container">
+				<h1>Recent Posts</h1>
+				<div class="content" id="content">
+					<div class="question" id="question">
+						<p><a href="answersToQuestions.html">What are data Structures?</a></p>
+						<p class="describe" id="describe">I really do not get the whole idea behind data structures and what it entails, i need help...</p>
+						<div class="avatar">
+							<p>2 mins ago</p>
+						</div>
+						<div class="dots">
+							<a href="#" id="dropOption"><img src="icons/dots.png"></a>
+							<div class="dropdown" id="dropdown">
+								<a href="#" id="delete">Delete</a>
+								<a href="#" id="edit">Edit</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="avatar">
+						<span><img src="icons/avatar.png"><b>John Doe</b> asked a question</span>
+						<p>5 hours ago</p>
+					</div>
+					<div class="question">
+						<p><a href="answersToQuestions.html">What is a function?</a></p>
+						<p class="describe" id="describe">I really do not get the whole idea behind data structures and what it entails, i need help...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="avatar">
+						<span><img src="icons/avatar.png"><b>Johnny Bravo</b> asked a question</span>
+						<p>5 hours ago</p>
+					</div>
+					<div class="question">
+						<p><a href="#">What are pointers?</a></p>
+						<p class="describe" id="describe">I really do not get the whole idea behind data structures and what it entails, i need help...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="avatar">
+						<span><img src="icons/avatar.png"><b>John Doe</b> asked a question</span>
+						<p>5 hours ago</p>
+					</div>
+					<div class="question" id="question">
+						<p><a href="answersToQuestions.html">What is a function?</a></p>
+						<p class="describe" id="describe">I really do not get the whole idea behind data structures and what it entails, i need help...</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="content">
+					<div class="avatar">
+						<span><img src="icons/avatar.png"><b>Johnny Bravo</b> asked a question</span>
+						<p>5 hours ago</p>
+					</div>
+					<div class="question">
+						<p><a href="#">What are pointers?</a></p>
+						<p class="describe" id="describe">I really do not get the whole idea behind data structures and what it entails, i need help...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>	
+	<div class="footer"></div>
+
+	<!---------------- Modal content for new questions ----------------------->
+
+	<form method="POST">
+		<div id="modal" class="modal">
+			<div class="modalContent">
+				<span id="close">x</span>
+				<div class="modalpost">
+					<h1>Ask a question</h1>
+					<h2>Question Title</h2>
+					<textarea rows="2" cols="60" placeholder="Type your question here" id="text"></textarea>
+					<h2>Describe your question</h2>
+					<textarea rows="5" cols="60" placeholder="Describe your question" id="text"></textarea>
+					<p><button onclick="postQuestion()" type="submit">Post</button></p>
+				</div>
+			</div>
+		</div>
+	</form>
+</body>
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/dropDown.js"></script>
+<script type="text/javascript" src="js/deletePost.js"></script>
+</html>

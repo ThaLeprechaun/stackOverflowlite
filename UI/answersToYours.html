@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StackOverflow-lite</title>
+	<link rel="stylesheet" type="text/css" href="css/feed.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ovo|Quattrocento+Sans">
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			
+		</div>
+
+		<div class="leftNav">
+			<a href="home.html">Home</a>
+			<a href="#">Notifications</a>
+			<a href="#"  id="newpost">Ask Question</a>
+			<a href="signIn.html" id="log">Log In</a>
+			<input type="text" name="search" placeholder="Search...">
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="leftpane">
+			<a href="Profile.html">My Profile</a>
+			<a href="questionsAsked.html">My Questions</a>
+			<a href="#">Settings</a>
+			<a href="#">Log Out</a>
+		</div>
+
+		<div class="activities">
+			<div class="container">
+				<div class="content">
+					<div class="question" id="question">
+						<p><b>What are Data Structures?</b></p>
+						<p class="describe" id="describe">I really do not get the whole idea of data structures and i need help. lorem ipsum dolo dola lorem ipsum dolalorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum  lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dolaloremvv lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dola</p>
+						<div class="avatar">
+							<p><b>5 hours ago</b></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<p class="howManyAns"><b>1 ANSWER</b></p>
+			<div class="container">
+				<div class="content">
+					<div class="avatar">
+						<span><img src="icons/avatar.png"><b>Johnny Bravo</b></span>
+						<p>1 hour ago</p>
+					</div>
+					<div class="answer">
+						<p>Data structures are lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum  lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dolaloremvv lorem ipsum dolo dola lorem ipsum dolo dola lorem ipsum dolo dola.</p>
+					</div>
+					<div class="icons">
+						<span>
+							<img src="icons/upvote.png" id="plus">
+							<span id="votecount">0</span>
+							<img src="icons/downvote.png" id="minus">
+							<img src="icons/hearts.png" id="heart">
+							<span id="like"></span>
+						</span>
+					</div>
+				</div>
+	
+				<div class="comment">
+					<textarea rows="3" cols="60" placeholder="Reply"></textarea>
+					<button>Comment</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="rightpane">
+			<span id="add"></span>
+		</div>
+	</div>	
+	<div class="footer"></div>
+
+	<!---------------- Modal content for new questions ----------------------->
+
+	<div id="modal" class="modal">
+		<div class="modalContent">
+			<span id="close">x</span>
+			<div class="modalpost">
+				<h1>Ask a question</h1>
+				<h2>Question Title</h2>
+				<textarea rows="2" cols="60" placeholder="Type your question here" id="text"></textarea>
+				<h2>Describe your question</h2>
+				<textarea rows="5" cols="60" placeholder="Describe your question" id="text"></textarea>
+				<p><button onclick="postQuestion()">Post</button></p>
+			</div>
+		</div>
+	</div>
+
+</body>
+
+<script type="text/javascript" src="js/modal.js"></script>
+<script type="text/javascript" src="js/iconsFunctions.js"></script>
+</html>
