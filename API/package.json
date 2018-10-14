@@ -1,0 +1,33 @@
+{
+  "name": "stackoverflow-lite",
+  "version": "1.0.0",
+  "description": "\"A platform\"",
+  "main": "index.js",
+  "scripts": {
+   "test": "eslint .",
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThaLeprechaun/StackOverflow-lite.git"
+  },
+  "author": "Akinbiyi Usman Olanrewaju",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^4.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.1",
+    "eslint-plugin-react": "^7.4.0",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.4",
+    "should": "^13.2.3",
+    "should-http": "^0.1.1",
+    "supertest": "^3.3.0"
+  }
+}

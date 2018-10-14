@@ -1,0 +1,40 @@
+{
+  "questions" : [
+    {
+      "id": 1,
+      "title": "What is a function",
+      "description": "I just want to know what functions are all about",
+      "answer": []
+    },
+    {
+      "id": 2,
+      "title": "What is a javaScript", 
+      "description": "I just want to know what a javaScript is all about",
+      "answer": []
+    },
+    {
+      "id": 3,
+      "title": "What is an object", 
+      "description": "I just want to know what arrays are all about",
+      "answer": []
+    },
+    {
+      "id": 4,
+      "title": "What is a class", 
+      "description": "I just want to know what arrays are all about",
+      "answer": []
+    },
+    {
+      "id": 5,
+      "title": "What is a data type", 
+      "description": "I just want to know what arrays are all about",
+      "answer": []
+    },
+    {
+      "id": 6,
+      "title": "What is an algorithm", 
+      "description": "I just want to know what arrays are all about",
+      "answer": []
+    }
+  ]
+}
