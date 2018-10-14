@@ -4,8 +4,9 @@
   "description": "\"A platform\"",
   "main": "index.js",
   "scripts": {
-   "test": "eslint .",
-    "start": "nodemon"
+    "test": "mocha && npm run eslint",
+    "start": "nodemon",
+    "eslint": "eslint ."
   },
   "repository": {
     "type": "git",

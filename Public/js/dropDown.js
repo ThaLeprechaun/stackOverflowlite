@@ -1,6 +1,5 @@
-var dropdown = document.getElementById("dropOption");
-dropdown.addEventListener("click", dropDown);
-	
+const dropdown = document.getElementById("dropOption");
 function dropDown() {
-	document.getElementById("dropdown").classList.toggle("output");
+  document.getElementById("dropdown").classList.toggle("output");
 }
+dropdown.addEventListener("click", dropDown);

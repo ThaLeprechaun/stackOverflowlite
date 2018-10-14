@@ -1,6 +1,6 @@
-var deleted = document.getElementById("delete");
-var content = document.getElementById("content");
-deleted.addEventListener("click", deletePost);
+const deleted = document.getElementById("delete");
+const content = document.getElementById("content");
 function deletePost() {
-	content.style.display = "none";
+  content.style.display = "none";
 }
+deleted.addEventListener("click", deletePost);

@@ -1,23 +1,23 @@
-var plus = document.getElementById("plus");
-	var minus = document.getElementById("minus");
-	var count = document.getElementById("votecount");
-	var counter = 0;
+const plus = document.getElementById("plus");
+const minus = document.getElementById("minus");
+const count = document.getElementById("votecount");
+let counter = 0;
 
-	plus.addEventListener("click", function () {
-		counter++;
-		count.innerHTML = counter;
-	});
+plus.addEventListener("click", () => {
+  counter += 1;
+  count.innerHTML = counter;
+});
 
-	minus.addEventListener("click", function () {
-		counter--;
-		count.innerHTML = counter;
-	});
+minus.addEventListener("click", () => {
+  counter -= 1;
+  count.innerHTML = counter;
+});
 
-	//Accepting answer
-	var heart = document.getElementById("heart");
-	var like = document.getElementById("like");
+// Accepting answer
+const heart = document.getElementById("heart");
+const like = document.getElementById("like");
 
-	heart.addEventListener("click", function () {
-		like.innerHTML = "Accepted";
-		like.style.color = "green";
-	});
+heart.addEventListener("click", () => {
+  like.innerHTML = "Accepted";
+  like.style.color = "green";
+});
