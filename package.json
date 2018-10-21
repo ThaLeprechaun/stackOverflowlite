@@ -34,5 +34,8 @@
     "should": "^13.2.3",
     "should-http": "^0.1.1",
     "supertest": "^3.3.0"
+  },
+  "engines": {
+    "node": "v8.11.3"
   }
 }
