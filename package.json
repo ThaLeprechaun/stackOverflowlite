@@ -4,7 +4,8 @@
   "description": "\"A platform\"",
   "main": "index.js",
   "scripts": {
-    "test": "mocha && npm run eslint",
+    "test": "nyc --reporter=html --reporter=text mocha && npm run eslint",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
     "start": "nodemon",
     "eslint": "eslint ."
   },
@@ -20,6 +21,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "chai-http": "^4.2.0",
+    "coveralls": "^3.0.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-plugin-import": "^2.7.0",
@@ -27,6 +29,7 @@
     "eslint-plugin-react": "^7.4.0",
     "mocha": "^5.2.0",
     "nodemon": "^1.18.4",
+    "nyc": "^13.1.0",
     "should": "^13.2.3",
     "should-http": "^0.1.1",
     "supertest": "^3.3.0"

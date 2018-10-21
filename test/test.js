@@ -30,10 +30,10 @@ describe("/POST a question", () => {
     request(app)
       .post("/api/v1/questions")
       .send({
-        "id": 7,
-        "title": "What is a function",
-        "description": "I just want to know what functions are all about",
-        "answer": []
+        id: 7,
+        title: "What is a function",
+        description: "I just want to know what functions are all about",
+        answer: []
       })
       .set("Accept", "application/json")
       .expect("Content-Type", /json/)
@@ -45,7 +45,7 @@ describe("/POST an answer to a question", () => {
     request(app)
       .post("/api/v1/questions/1/answer")
       .send({
-        "answer": ["blah blah blah bue 2"]
+        answer: ["blah blah blah bue 2"]
       })
       .set("Accept", "application/json")
       .expect("Content-Type", /json/)

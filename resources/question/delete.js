@@ -11,6 +11,6 @@ module.exports = (req, res) => {
   const index = questions.indexOf(question);
   questions.splice(index, 1);
   res.status(200).json({
-    "deleted": "true"
+    deleted: "true"
   });
 };

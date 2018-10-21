@@ -41,6 +41,7 @@
         "no-console":  ["error", { "allow": ["warn"] }],
         "radix": 0,
         "consistent-return": 0,
+        "allowForLoopAfterthoughts": true,
         "no-plusplus": "off"
 	}
 }

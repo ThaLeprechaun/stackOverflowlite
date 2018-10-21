@@ -13,10 +13,10 @@ module.exports = (req, res) => {
   const questions = data.questions;
   const newId = questions.length + 1;
   const newQuestion = {
-    "id": newId,
-    "title": req.body.title,
-    "description": req.body.description,
-    "answer": []
+    id: newId,
+    title: req.body.title,
+    description: req.body.description,
+    answer: []
   };
   // questions.push(newQuestion);
   questions.splice(newId, 0, newQuestion);
