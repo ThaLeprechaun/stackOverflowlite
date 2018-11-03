@@ -9,5 +9,6 @@ router.get("/:questionId", require("./single"));
 router.post("/", require("./create"));
 router.post("/:questionId/answer", require("./answer"));
 router.delete("/:questionId", require("./delete"));
+router.put("/:questionId/answer", require("./update"));
 
 module.exports = router;

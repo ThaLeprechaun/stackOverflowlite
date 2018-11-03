@@ -1,0 +1,2 @@
+2018-10-26 16:27:24 GMT [6024]: [1-1] user=,db=,app=,client= FATAL:  lock file "postmaster.pid" already exists
+2018-10-26 16:27:24 GMT [6024]: [2-1] user=,db=,app=,client= HINT:  Is another postmaster (PID 6524) running in data directory "C:/PostgreSQL/data/pg10"?

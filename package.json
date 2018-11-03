@@ -16,7 +16,9 @@
   "author": "Akinbiyi Usman Olanrewaju",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.3"
+    "dotenv": "^6.1.0",
+    "express": "^4.16.3",
+    "pg": "^7.5.0"
   },
   "devDependencies": {
     "chai": "^4.1.2",

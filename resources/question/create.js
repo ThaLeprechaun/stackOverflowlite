@@ -5,10 +5,6 @@ module.exports = (req, res) => {
     res.status(400).send("Invalid input");
     return;
   }
-  /* if((!req.body.description)){
-    res.status(400).send("Invalid input");
-    return;
-  } */
 
   const questions = data.questions;
   const newId = questions.length + 1;
@@ -16,8 +12,9 @@ module.exports = (req, res) => {
     id: newId,
     title: req.body.title,
     description: req.body.description,
-    answer: []
+    answers: []
   };
+
   // questions.push(newQuestion);
   questions.splice(newId, 0, newQuestion);
   return res.send(newQuestion); /* eslint consistent-return: off */

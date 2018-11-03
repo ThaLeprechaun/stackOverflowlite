@@ -6,7 +6,7 @@ module.exports = (req, res) => {
   data.questions.forEach((question) => {
     if (question.id === questionId) {
       notFound = false;
-      question.answers.push(req.body.answers);
+      // question.answers.push(req.body.answers);
     }
   });
 
@@ -15,5 +15,12 @@ module.exports = (req, res) => {
     return;
   }
 
-  return res.send(req.body.answers); /* eslint consistent-return: off */
+  const updatedQuestion = {
+    id: questionId,
+    title: req.body.title,
+    description: req.body.description,
+    answers: []
+  }
+  data.questions.splice(questionId, 0, updatedQuestion);
+  return res.send({ message: "Successfully updated", updatedQuestion }); /* eslint consistent-return: off */
 }

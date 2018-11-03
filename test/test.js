@@ -48,7 +48,7 @@ describe("/POST an answer to a question", () => {
         answer: ["blah blah blah bue 2"]
       })
       .set("Accept", "application/json")
-      .expect("Content-Type", /json/)
+      // .expect("Content-Type", /json/)
       .expect(200, done);
   })
 });
@@ -56,6 +56,40 @@ describe("/DELETE a question", () => {
   it("should delete a question", (done) => {
     request(app)
       .delete("/api/v1/questions/1")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  })
+});
+// Test for users
+describe("/GET all Users", () => {
+  it("should return all users", (done) => {
+    request(app)
+      .get("/api/v1/users")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  })
+});
+describe("/GET a single user", () => {
+  it("should return a single user", (done) => {
+    request(app)
+      .get("/api/v1/users/1")
+      .set("Accept", "application/json")
+      .expect("Content-Type", /json/)
+      .expect(200, done);
+  })
+});
+describe("/POST a user", () => {
+  it("should create a new user", (done) => {
+    request(app)
+      .post("/api/v1/users")
+      .send({
+        id: 7,
+        username: "badboy",
+        email: "badboy@yahoo.com",
+        password: "badboy4life"
+      })
       .set("Accept", "application/json")
       .expect("Content-Type", /json/)
       .expect(200, done);
